@@ -1,0 +1,22 @@
+.carousel {
+  width: 800px;
+  margin: auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+img {
+  height: 400px;
+  max-height: 400px;
+  object-fit: contain;
+  width: auto;
+  margin: 5px auto;
+  border: 3px solid black;
+}
