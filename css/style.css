@@ -1,0 +1,39 @@
+:root {
+  --height: 400px;
+  /* --multiplication-constant: 12.28; */ /* total-width / height */
+  --total-width: 4912px;
+}
+
+header {
+  margin: 30px;
+}
+
+body {
+  background-color: #e9eef1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc( var(--total-width) * -1 ));
+  }
+}
+
+.slider {
+  height: var(--height);
+  overflow: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.slider .slide-track {
+  animation: scroll 25s linear infinite;
+  display: flex;
+  width: calc( var(--total-width) * 2 );
+}
+
+div.slide img {
+  height: 400px;
+}
