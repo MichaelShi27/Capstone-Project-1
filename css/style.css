@@ -34,6 +34,34 @@ body {
   width: calc( var(--total-width) * 2 );
 }
 
+.slider .slide-track:hover {
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
 div.slide img {
   height: 400px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+li img {
+  width: 225px;
+  height: 110px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+li img:hover {
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid blue;
+  filter: brightness(85%);
 }
