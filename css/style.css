@@ -53,26 +53,15 @@ ul {
   flex-wrap: wrap;
 }
 
-li div {
-  background-color: rgb(251, 254, 255);
+li img {
   width: 225px;
   height: 110px;
   margin: 10px;
-  text-align: center;
-  line-height: 110px;
-  position: relative;
   border: 1px solid black;
-  color: blue;
 }
 
-li div:hover {
-  background-color: rgb(255, 240, 240);
-  box-shadow: 5px 5px 5px rgb(175, 175, 175);
-  color: blue;
-  font-size: 18px;
-}
-
-li a {
-  text-decoration: none;
-  color: inherit;
+li img:hover {
+  box-shadow: 5px 5px 5px gray;
+  border: 1px solid blue;
+  filter: brightness(85%);
 }
