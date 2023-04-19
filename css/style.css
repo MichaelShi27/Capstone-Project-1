@@ -6,6 +6,12 @@
 
 header {
   margin: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  padding: 20px 20px 10px;
+  border: 1px solid black;
 }
 
 body {
@@ -64,4 +70,25 @@ li img:hover {
   box-shadow: 5px 5px 5px gray;
   border: 2px solid black;
   filter: brightness(85%);
+}
+
+header > a {
+  display: inline-block; /* need this to get rid of weird line thing by logo */
+}
+
+.navbar {
+  display: inline-flex;
+  width: 80%;
+  border: 1px solid black;
+  margin-left: 20px;
+}
+
+.nav-item-wrapper {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-item-wrapper:hover .nav-item {
+  text-shadow: 0 0 1px blue;
+  color: blue;
 }
