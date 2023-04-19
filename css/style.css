@@ -98,10 +98,14 @@ header > a {
   color: blue;
 }
 
-h2, h3 {
+section#featured h2, section#about h3 {
   font-family: 'Century Gothic', Verdana, sans-serif;
   margin: 40px 0 30px 30px;
   text-align: center;
+}
+
+section#about h3 {
+  margin-bottom: 50px;
 }
 
 #featured {
@@ -115,4 +119,9 @@ h2, h3 {
   background-color: black;
   color: white;
   padding: 20px;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
 }
