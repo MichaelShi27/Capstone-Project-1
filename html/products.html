@@ -13,54 +13,58 @@
 </head>
 
 <body>
-  <header>
-    <a href="#">
-      <img src="../images/grailzLogo.png" alt="Grailz logo">
-    </a>
-    <!-- bootstrap navbar component -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav container-fluid">
-          <div class="nav-item-wrapper">
-            <a class="nav-item nav-link active" href="index.html">Home</a>
+  <div class="page-container">
+    <div class="content-wrap">
+      <header>
+        <a href="#">
+          <img src="../images/grailzLogo.png" alt="Grailz logo">
+        </a>
+        <!-- bootstrap navbar component -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav container-fluid">
+              <div class="nav-item-wrapper">
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+              </div>
+              <div class="nav-item-wrapper">
+                <a class="nav-item nav-link" id="products-link" href="products.html">Products</a>
+              </div>
+              <div class="nav-item-wrapper">
+                <a class="nav-item nav-link" href="checkout.html">Checkout</a>
+              </div>
+              <div class="nav-item-wrapper">
+                <a class="nav-item nav-link" href="login.html">Login</a>
+              </div>
+              <div class="nav-item-wrapper">
+                <a class="nav-item nav-link" href="registration.html">Register</a>
+              </div>
+            </div>
           </div>
-          <div class="nav-item-wrapper">
-            <a class="nav-item nav-link" id="products-link" href="products.html">Products</a>
-          </div>
-          <div class="nav-item-wrapper">
-            <a class="nav-item nav-link" href="checkout.html">Checkout</a>
-          </div>
-          <div class="nav-item-wrapper">
-            <a class="nav-item nav-link" href="login.html">Login</a>
-          </div>
-          <div class="nav-item-wrapper">
-            <a class="nav-item nav-link" href="registration.html">Register</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+        </nav>
+      </header>
 
-  <main>
-    <!-- 6+ products each w a button to order/add to cart 
-    each prod must be described w bootstrap card & must contain img -->
+      <main>
+        <!-- 6+ products each w a button to order/add to cart 
+        each prod must be described w bootstrap card & must contain img -->
 
-    <!-- gucci flip flops: 400
-    raf aw03 parka: 70,000
-    raf adidas response trail 2: 400
-    rick adidas tech runner: 450
-    opn x oc: 80
-    tgk x oc: 65
-    undercover jkt: 7000
-    y3: 340
-    supreme: 400
-    BV boots: 1000 -->
-  </main>
+        <!-- gucci flip flops: 400
+        raf aw03 parka: 70,000
+        raf adidas response trail 2: 400
+        rick adidas tech runner: 450
+        opn x oc: 80
+        tgk x oc: 65
+        undercover jkt: 7000
+        y3: 340
+        supreme: 400
+        BV boots: 1000 -->
+      </main>
+    </div>
 
-  <footer>
-    &#169; Grailz, Inc. 2023
-  </footer>
-
+    <footer>
+      &#169; Grailz, Inc. 2023
+    </footer>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script>
     if (window.location.pathname === '/html/products.html')

@@ -133,7 +133,20 @@ header > a {
   border: 1px solid white;
 }
 
+/* next 3 rules are from freecodecamp for footer positioning */
+.page-container {
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.content-wrap {
+  padding-bottom: 3rem;
+}
+
 footer {
   text-align: center;
-  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
