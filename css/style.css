@@ -88,6 +88,10 @@ header > a {
   text-align: center;
 }
 
+.nav-item {
+  color: black;
+}
+
 .nav-item-wrapper:hover .nav-item {
   text-shadow: 0 0 1px blue;
   color: blue;
