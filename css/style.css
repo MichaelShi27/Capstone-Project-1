@@ -136,7 +136,7 @@ header > a {
 /* next 3 rules are from freecodecamp for footer positioning */
 .page-container {
   position: relative;
-  /* min-height: 100vh; */
+  min-height: 95vh;
 }
 
 .content-wrap {
@@ -149,4 +149,36 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}
+
+#login-form {
+  background-color: #e8ecef;
+  padding: 40px;
+  width: 30%;
+  margin: 80px auto;
+  border: 1px solid black;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  margin: auto;
+  display: block;
+  padding: 5px 10px;
+}
+
+form input {
+  margin: 10px 0 10px 20px;
+  width: 70%;
+  display: inline-block;
+}
+
+form input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+#password-input {
+  margin-left: 25px;
 }
