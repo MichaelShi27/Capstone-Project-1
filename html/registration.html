@@ -34,7 +34,7 @@
             <a class="nav-item nav-link" href="login.html">Login</a>
           </div>
           <div class="nav-item-wrapper">
-            <a class="nav-item nav-link" href="registration.html">Register</a>
+            <a class="nav-item nav-link" id="registration-link" href="registration.html">Register</a>
           </div>
         </div>
       </div>
@@ -48,6 +48,10 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+    if (window.location.pathname === '/html/registration.html')
+      document.getElementById('registration-link').style.fontWeight = 'bold';
+  </script>
 </body>
 
 </html>
