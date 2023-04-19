@@ -33,10 +33,10 @@
                 <a class="nav-item nav-link" href="checkout.html">Checkout</a>
               </div>
               <div class="nav-item-wrapper">
-                <a class="nav-item nav-link" href="login.html">Login</a>
+                <a class="nav-item nav-link" href="login.html">Log In</a>
               </div>
               <div class="nav-item-wrapper">
-                <a class="nav-item nav-link" id="registration-link" href="registration.html">Register</a>
+                <a class="nav-item nav-link" id="registration-link" href="registration.html">Sign Up</a>
               </div>
             </div>
           </div>
@@ -44,9 +44,45 @@
       </header>
 
       <main>
-        <!-- form w username, pw, pw confirmation, email fields
-        set of radio buttons w responses to the question "how did u hear about us?"
-        appropriate html validation attributes -->
+        <form id="registration-form">
+          <div class="form-group">
+            <label for="registration-email-input">Email:</label>
+            <input type="email" id="registration-email-input" required>
+          </div>
+          <div class="form-group">
+            <label for="username-input">Username:</label>
+            <input type="text" id="registration-username-input" required>
+          </div>
+          <div class="form-group">
+            <label for="password-input">Password:</label>
+            <input type="password" id="registration-password-input" required>
+          </div>
+          <div class="form-group">
+            <label for="password-confirmation">Confirm password:</label>
+            <input type="password" id="registration-password-confirmation" required>
+          </div>
+          <fieldset>
+            <legend>How did you hear about Grailz?</legend>
+            <div>
+              <input type="radio" id="adverisement" name="option" value="adverisement">
+              <label for="adverisement">Advertisement</label>
+            </div>
+            <div>
+              <input type="radio" id="social-media" name="option" value="social-media">
+              <label for="dewey">Social media</label>
+            </div>
+            <div>
+              <input type="radio" id="word-of-mouth" name="option" value="word-of-mouth">
+              <label for="word-of-mouth">Word of mouth</label>
+            </div>
+            <div>
+              <input type="radio" id="other" name="option" value="other">
+              <label for="other">Other:</label>
+              <input type="text" id="other-input">
+            </div>
+          </fieldset>
+          <button type="submit">Sign Up</button>
+        </form>
       </main>
     </div>
 
@@ -54,7 +90,7 @@
       &#169; Grailz, Inc. 2023
     </footer>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script>
     if (window.location.pathname === '/html/registration.html')

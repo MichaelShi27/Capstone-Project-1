@@ -151,7 +151,7 @@ footer {
   height: 2.5rem;
 }
 
-#login-form {
+form {
   background-color: #e8ecef;
   padding: 40px;
   width: 30%;
@@ -168,6 +168,10 @@ button {
   padding: 5px 10px;
 }
 
+button:hover {
+  background-color: rgb(1, 1, 70);
+}
+
 form input {
   margin: 10px 0 10px 20px;
   width: 70%;
@@ -181,4 +185,49 @@ form input:focus {
 
 #password-input {
   margin-left: 25px;
+}
+
+#registration-form {
+  width: 40%;
+  padding-left: 60px;
+}
+
+#registration-form input {
+  width: 60%;
+}
+
+#registration-form button {
+  margin-top: 30px;
+}
+
+fieldset legend {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+fieldset label {
+  font-size: 12px;
+}
+
+#registration-form fieldset input {
+  width: 30px;
+}
+
+#other-input {
+  margin-left: 10px;
+  width: 180px !important;
+  height: 24px;
+  font-size: 0.7em;
+}
+
+#registration-email-input {
+  margin-left: 112px;
+}
+
+#registration-username-input {
+  margin-left: 78px;
+}
+
+#registration-password-input {
+  margin-left: 82px;
 }
