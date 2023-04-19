@@ -80,7 +80,7 @@ header > a {
 .navbar {
   display: inline-flex;
   width: 80%;
-  border: 1px solid black;
+  border: 1px solid blue;
   margin-left: 20px;
 }
 
@@ -98,19 +98,15 @@ header > a {
   color: blue;
 }
 
-section#featured h2, section#about h3 {
+#featured h2, #about h3 {
   font-family: 'Century Gothic', Verdana, sans-serif;
   margin: 40px 0 30px 30px;
   text-align: center;
 }
 
-section#about h3 {
-  margin-bottom: 50px;
-}
-
 #featured {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
   margin: 30px 5px;
   background-color: #e8ecef;
 }
@@ -119,6 +115,22 @@ section#about h3 {
   background-color: black;
   color: white;
   padding: 20px;
+}
+
+#about h3 {
+  margin-bottom: 50px;
+}
+
+#about > div {
+  display: flex;
+  margin-left: 30px;
+}
+
+#about img {
+  height: 150px;
+  margin: 0 30px 20px;
+  border-radius: 100%;
+  border: 1px solid white;
 }
 
 footer {
