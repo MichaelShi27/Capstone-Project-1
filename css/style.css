@@ -15,7 +15,8 @@ header {
 }
 
 body {
-  background-color: #e9eef1;
+  background-image: url('../images/silver.jpg');
+  background-size: cover;
 }
 
 @keyframes scroll {
@@ -95,4 +96,23 @@ header > a {
 .nav-item-wrapper:hover .nav-item {
   text-shadow: 0 0 1px blue;
   color: blue;
+}
+
+h2, h3 {
+  font-family: 'Century Gothic', Verdana, sans-serif;
+  margin: 40px 0 30px 30px;
+  text-align: center;
+}
+
+#featured {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 30px 5px;
+  background-color: #e8ecef;
+}
+
+#about {
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
