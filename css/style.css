@@ -336,3 +336,9 @@ fieldset label {
 .img-td {
   text-align: center;
 }
+
+.cart-badge {
+  background: red;
+  padding: 0 5px;
+  vertical-align: top;
+}
