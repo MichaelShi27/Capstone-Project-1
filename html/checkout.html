@@ -49,60 +49,9 @@
         - input fields must include appropriate html validation attrs (eg required, max length, etc)
         - table w 3+ rows of sample data for items in cart 
       -->
-        <section class="checkout-container">
+        <div class="checkout-container">
           <div class="row">
-            <div id="cart-container">
-              <div id="cart-header">Cart (3)</div>
-              <ul class="list-group cart-list">
-                <li class="cart-row">
-                  <img src="../images/products/rafParka.png" alt="Raf Simons parka">
-                  <div class="cart-row-section">
-                    <div>
-                      <h6 class="my-0">Raf Simons FW03 parka</h6>
-                    </div>
-                    <span class="text-muted">$70,000</span>
-                  </div>
-                </li>
-                <li class="cart-row">
-                  <img src="../images/products/supremePants.png" alt="Supreme flight pants" style="margin-left: 3px">
-                  <div class="cart-row-section">
-                    <div>
-                      <h6 class="my-0">Supreme FW17 flight pants</h6>
-                    </div>
-                    <span class="text-muted">$400</span>
-                  </div>
-                </li>
-                <li class="cart-row">
-                  <img src="../images/products/rafAdidas.png" alt="Raf Simons x Adidas sneakers" style="width: 80px; height: auto;">
-                  <div class="cart-row-section">
-                    <div>
-                      <h6 class="my-0">Raf Simons x Adidas Response Trail 2</h6>
-                    </div>
-                    <span class="text-muted">$400</span>
-                  </div>
-                </li>
-                <li class="cart-row special-cart-row d-flex justify-content-between">
-                  <div class="text-success">
-                    <h6 class="my-0">Promo code:</h6>
-                    <small>SHMUNKEM</small>
-                  </div>
-                  <span class="text-success">-200% ($141,600)</span>
-                </li>
-                <li class="cart-row special-cart-row d-flex justify-content-between">
-                  <strong>Total (USD):</strong>
-                  <strong>-$70,800</strong>
-                </li>
-              </ul>
-              <form id="promo-form">
-                <div class="input-group">
-                  <input type="text" placeholder="Promo code">
-                  <div class="input-group-append">
-                    <button type="submit" id="promo-button">Apply</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-8 order-md-1">
+            <div class="checkout-form-wrapper">
               <form class="needs-validation" novalidate="">
                 <div class="row">
                   <div class="col-md-6 mb-3">
@@ -217,8 +166,61 @@
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
               </form>
             </div>
+            <div id="cart-container-wrapper">
+              <section id="cart-container">
+                <div id="cart-header">Cart (3)</div>
+                <div id="cart">
+                  <table>
+                    <!-- <tr>
+                      <th>Company</th>
+                      <th>Contact</th>
+                      <th>Country</th>
+                    </tr> -->
+                    <tr>
+                      <td class="img-td">
+                        <img src="../images/products/rafParka.png" alt="Raf Simons parka">
+                      </td>
+                      <td>Raf Simons FW03 parka</td>
+                      <td>$70,000</td>
+                    </tr>
+                    <tr>
+                      <td class="img-td">
+                        <img src="../images/products/supremePants.png" alt="Supreme flight pants" style="margin-left: 3px">
+                      </td>
+                      <td>Supreme FW17 flight pants</td>
+                      <td>$400</td>
+                    </tr>
+                    <tr>
+                      <td class="img-td">
+                        <img src="../images/products/rafAdidas.png" alt="Raf Simons x Adidas sneakers" style="width: 80px; height: auto;">
+                      </td>
+                      <td>Raf Simons x Adidas Response Trail 2</td>
+                      <td>$400</td>
+                    </tr>
+                  </table>
+                  <div class="special-cart-row d-flex justify-content-between">
+                    <div class="text-success">
+                      <h6 class="my-0">Promo code: SHMUNKEM</h6>
+                    </div>
+                    <span class="text-success">-200% ($141,600)</span>
+                  </div>
+                  <div class="special-cart-row d-flex justify-content-between">
+                    <strong>Total (USD):</strong>
+                    <strong>-$70,800</strong>
+                  </div>
+                </div>
+                <form id="promo-form">
+                  <div class="input-group">
+                    <input type="text" placeholder="Promo code">
+                    <div class="input-group-append">
+                      <button type="submit">Apply</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   
