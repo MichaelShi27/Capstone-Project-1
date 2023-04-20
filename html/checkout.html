@@ -49,11 +49,10 @@
       <!-- 
         - html form w input fields, select field, & submit button for purchaser info
         - input fields must include appropriate html validation attrs (eg required, max length, etc)
-        - table w 3+ rows of sample data for items in cart 
       -->
-        <div class="checkout-container">
+        <div class="checkout-container container">
           <div class="row">
-            <div class="checkout-form-wrapper">
+            <div class="checkout-form-wrapper col-6">
               <form class="needs-validation" novalidate="">
                 <div class="row">
                   <div class="col-md-6 mb-3">
@@ -168,7 +167,7 @@
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
               </form>
             </div>
-            <div id="cart-container-wrapper">
+            <div id="cart-container-wrapper" class="col-6">
               <section id="cart-container">
                 <div id="cart-header">Cart (3)</div>
                 <div id="cart">

@@ -237,19 +237,16 @@ fieldset label {
 .checkout-container > .row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 #cart-container-wrapper {
-  width: 50%;
-  left: 50%;
+  border: 1px solid blue;
 }
+
 #cart-container {
   position: sticky;
-  top: 120px;
-  /* border: 2px solid red; */
-  /* width: 50%;
-  left: 50%; */
+  top: 140px;
+  border: 2px solid red;
 }
 
 #promo-form {
@@ -289,6 +286,7 @@ fieldset label {
 
 .text-success {
   color: rgb(8, 192, 8) !important;
+  margin-top: 5px;
   font-family: Geneva, Verdana, sans-serif;
 }
 
@@ -299,15 +297,13 @@ fieldset label {
 
 .checkout-form-wrapper {
   border: 2px solid red;
-  width: 40%;
-  left: 0;
-  height: 800px;
-  display: inline-block;
+  width: 45%;
 }
 
 .checkout-container {
   /* border: 3px solid green; */
   /* position: relative; */
+  /* height: 3000px; */
 }
 
 #cart img {
