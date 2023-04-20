@@ -239,14 +239,9 @@ fieldset label {
   justify-content: space-between;
 }
 
-#cart-container-wrapper {
-  border: 1px solid blue;
-}
-
 #cart-container {
   position: sticky;
   top: 140px;
-  border: 2px solid red;
 }
 
 #promo-form {
@@ -256,12 +251,12 @@ fieldset label {
 }
 
 #promo-form input {
-  width: 72%;
+  width: 60%;
   padding: 4px;
 }
 
 #promo-form button {
-  margin: 6px 0 0 30px;
+  margin: 8px 0 0 30px;
   background-color: rgb(101, 101, 255);
 }
 
@@ -296,14 +291,7 @@ fieldset label {
 }
 
 .checkout-form-wrapper {
-  border: 2px solid red;
-  width: 45%;
-}
-
-.checkout-container {
-  /* border: 3px solid green; */
-  /* position: relative; */
-  /* height: 3000px; */
+  padding: 0 30px;
 }
 
 #cart img {
@@ -335,6 +323,32 @@ fieldset label {
 
 .cart-badge {
   background: red;
-  padding: 0 5px;
+  padding: 1px 4px;
   vertical-align: top;
+}
+
+#checkout-form input {
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+#checkout-form {
+  background-color: var(--pale-blue);
+  padding: 30px;
+  border: 1px solid blue;
+}
+
+#checkout-form input[type="checkbox"],
+#checkout-form input[type="radio"] {
+  width: auto;
+}
+
+#checkout-form button {
+  padding: 10px 15px;
+}
+
+#checkout-form .custom-radio {
+  display: inline-block;
+  margin: 0 5px;
 }
