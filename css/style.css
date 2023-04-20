@@ -190,6 +190,7 @@ form input:focus {
 #registration-form {
   width: 40%;
   padding-left: 60px;
+  margin: 40px auto;
 }
 
 #registration-form input {
