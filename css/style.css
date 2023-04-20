@@ -151,7 +151,7 @@ footer {
   height: 2.5rem;
 }
 
-form {
+#login-form, #registration-form, #promo-form {
   background-color: #e8ecef;
   padding: 40px;
   width: 30%;
@@ -231,4 +231,89 @@ fieldset label {
 
 #registration-password-input {
   margin-left: 82px;
+}
+
+.checkout-container > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cart-container {
+  position: sticky;
+  top: 120px;
+  width: 50%;
+  left: 50%;
+}
+
+#promo-form {
+  width: 70%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#promo-form input {
+  width: 72%;
+  padding: 4px;
+}
+
+#promo-form button {
+  margin: 6px 0 0 30px;
+  background-color: rgb(101, 101, 255);
+}
+
+#promo-form button:hover {
+  background-color: rgb(7, 7, 156);
+}
+
+.checkout-container ul {
+  width: 98%;
+}
+
+.checkout-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout-container ul img {
+  height: 80px;
+  border: none;
+  width: auto;
+  margin: 0;
+}
+
+#cart-header {
+  margin: 10px 15px 0 0;
+  padding: 10px 10px 10px 28px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+.cart-row {
+  background-color: white;
+  border: 1px solid rgb(192, 190, 190);
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.special-cart-row {
+  height: auto;
+  background-color: #e8ecef;
+  border: 1px solid gray;
+}
+
+.text-success {
+  color: rgb(8, 192, 8) !important;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.cart-row-section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-list {
+  border: 2px solid blue;
 }
