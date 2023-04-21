@@ -17,7 +17,9 @@
     <div class="content-wrap">
       <header>
         <a href="#">
-          <img src="../images/grailzLogo.png" alt="Grailz logo">
+          <div class="product-img">
+            <img src="../images/grailzLogo.png" alt="Grailz logo">
+          </div>
         </a>
         <!-- bootstrap navbar component -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,21 +48,6 @@
       </header>
 
       <main>
-        <!-- 6+ products each w a button to order/add to cart 
-        each prod must be described w bootstrap card & must contain img -->
-
-        <!-- 
-          tgk x oc: 65
-          opn x oc: 80
-          gucci flip flops: 400
-          y3: 340
-          supreme fw17: 400
-          raf adidas response trail 2: 400
-          rick adidas tech runner: 450
-          BV boots: 1000
-          undercover jkt: 7000
-          raf fw03 parka: 70,000
-        -->
         <section id="products">
           <div class="sort-by">
             <label for="products-sort-by">Sort by:</label>
@@ -76,7 +63,13 @@
             <div class="row">
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/rafAdidas.png" alt="Raf Simons x Adidas sneakers" style="object-fit: contain">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/rafAdidas.png"
+                      alt="Raf Simons x Adidas sneakers"
+                      style="object-fit: contain; transform-origin: 80px 140px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Raf Simons x Adidas Response Trail 2</h5>
                   </div>
@@ -88,7 +81,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/resized/undercover-resized.png" alt="Undercover parka">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/resized/undercover-resized.png"
+                      alt="Undercover parka"
+                      style="transform-origin: 100px 20px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Undercover x Neon Genesis Evangelion parka</h5>
                   </div>
@@ -100,7 +99,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/y3.jpg" alt="Y-3 sneakers">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/y3.jpg"
+                      alt="Y-3 sneakers"
+                      style="transform-origin: 120px 170px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Y-3 Response TR Boost</h5>
                   </div>
@@ -111,10 +116,17 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/resized/OPNxOC-resized.jpg" alt="Online Ceramics x Oneohtrix Point Never shirt">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/resized/OPNxOC-resized.jpg"
+                      alt="Online Ceramics x Oneohtrix Point Never shirt"
+                      style="transform-origin: 10px 50px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Online Ceramics x Oneohtrix Point Never shirt</h5>
                   </div>
@@ -126,7 +138,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/supremePants.png" alt="Supreme pants" style="object-fit: contain">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/supremePants.png"
+                      alt="Supreme pants"
+                      style="object-fit: contain; transform-origin: 130px 40px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Supreme FW17 flight pants</h5>
                   </div>
@@ -138,7 +156,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/rickAdidas.png" alt="Rick Owens x Adidas sneakers">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/rickAdidas.png"
+                      alt="Rick Owens x Adidas sneakers"
+                      style="transform-origin: 40px 10px"
+                    >
+                  </div>
                   <div class="card-title-wrap">
                     <h5 class="card-title">Rick Owens x Adidas Tech Runners</h5>
                   </div>
@@ -149,10 +173,17 @@
                 </div>
               </div>
             </div>
+            
             <div class="row">
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/rafParka.png" alt="Raf Simons parka" style="object-fit: contain">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/rafParka.png"
+                      alt="Raf Simons parka"
+                      style="object-fit: contain; transform-origin: 120px 90px"
+                    >
+                  </div>
                   <div class="card-title-wrap small-card-title">
                     <h5 class="card-title">Raf Simons FW03 parka</h5>
                   </div>
@@ -164,7 +195,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/resized/BVboots-resized.jpg" alt="Bottega Veneta boots">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/resized/BVboots-resized.jpg"
+                      alt="Bottega Veneta boots"
+                      style="transform-origin: 40px 160px"
+                    >
+                  </div>
                   <div class="card-title-wrap small-card-title">
                     <h5 class="card-title">Bottega Veneta Tire boots</h5>
                   </div>
@@ -176,7 +213,13 @@
               </div>
               <div class="col-md-4 card-wrap">
                 <div class="product-card" style="width: 18rem;">
-                  <img src="../images/products/resized/TGKxOC-resized.jpg" alt="Online Ceramics x A24 shirt">
+                  <div class="product-img">
+                    <img
+                      src="../images/products/resized/TGKxOC-resized.jpg"
+                      alt="Online Ceramics x A24 shirt"
+                      style="transform-origin: 10px 105px"
+                    >
+                  </div>
                   <div class="card-title-wrap small-card-title">
                     <h5 class="card-title">Online Ceramics x A24 shirt</h5>
                   </div>

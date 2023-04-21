@@ -393,6 +393,15 @@ fieldset label {
   width: 263px;
   height: 195px;
   object-fit: cover;
+  transition: transform .6s;
+}
+
+#products .product-card img:hover {
+  transform: scale(2.0);
+}
+
+.product-img {
+  overflow: hidden;
 }
 
 #products .container {
