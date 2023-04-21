@@ -201,11 +201,11 @@ form input:focus {
 }
 
 #registration-form::-webkit-scrollbar-thumb {
-  background: blue;  
+  background-color: blue;  
 }
 
 #registration-form::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 163);  
+  background-color: rgb(0, 0, 163);  
 }
 
 #registration-form input {
@@ -336,7 +336,7 @@ fieldset label {
 }
 
 .cart-badge {
-  background: red;
+  background-color: red;
   padding: 1px 4px;
   vertical-align: top;
 }
@@ -380,6 +380,64 @@ fieldset label {
   padding: 3px;
 }
 
-#products .row {
-  margin: 20px;
+.product-card {
+  padding: 20px 0 20px 10%;
+}
+
+.card-wrap {
+  border: 1px solid rgb(171, 171, 171);
+  padding: 0 4%;
+}
+
+#products .product-card img {
+  width: 263px;
+  height: 195px;
+  object-fit: cover;
+}
+
+#products .container {
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 20px;
+  overflow: scroll;
+  height: 450px;
+}
+
+#products .container::-webkit-scrollbar {
+  width: 4px;
+}
+
+#products .container::-webkit-scrollbar-thumb {
+  background-color: blue;  
+}
+
+#products .container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 0, 163);  
+}
+
+#products .product-card button {
+  background-color: rgb(83, 83, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+#products .product-card button:hover {
+  background-color: blue;
+}
+
+.card-title-wrap {
+  height: 58px;
+  width: 280px;
+  margin-top: 10px;
+}
+
+.small-card-title {
+  height: 30px;
+}
+
+.card-text {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
 }
