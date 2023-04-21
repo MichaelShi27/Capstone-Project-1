@@ -404,6 +404,10 @@ fieldset label {
   overflow: hidden;
 }
 
+.img-border {
+  border: 1px solid black;
+}
+
 #products .container {
   background-color: white;
   border: 2px solid black;
@@ -425,10 +429,11 @@ fieldset label {
 }
 
 #products .product-card button {
-  background-color: rgb(83, 83, 255);
+  background-color: rgb(85, 165, 255);
   border-radius: 20px;
   padding: 10px;
   margin: 0;
+  font-size: 10px;
 }
 
 #products .product-card button:hover {
