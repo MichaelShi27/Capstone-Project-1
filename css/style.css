@@ -1,7 +1,7 @@
 :root {
   --height: 400px;
   /* --multiplication-constant: 12.28; */ /* total-width / height */
-  --total-width: 4912px; /* width of all the product images next to each other; used for carousel/slider */
+  --total-width: 7790.2px; /* width of all the product images next to each other; used for carousel/slider */
   --pale-blue: #e8ecef;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .slider .slide-track {
-  animation: scroll 25s linear infinite;
+  animation: scroll 28s linear infinite;
   display: flex;
   width: calc( var(--total-width) * 2 );
 }
