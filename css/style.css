@@ -77,6 +77,14 @@ header > a {
   display: inline-block; /* need this to get rid of weird line thing by logo */
 }
 
+header > a:hover {
+  background-image: url('../images/grailzLogoRed.png');
+}
+
+header > a img:hover {
+  opacity: 0%;
+}
+
 .navbar {
   display: inline-flex;
   width: 80%;
