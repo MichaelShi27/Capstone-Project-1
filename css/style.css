@@ -9,7 +9,7 @@ header {
   margin: 30px;
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 5; /* for sticky functionality */
   background-color: white;
   padding: 20px 20px 10px;
   border: 1px solid black;
@@ -77,19 +77,64 @@ header > a {
   display: inline-block; /* need this to get rid of weird line thing by logo */
 }
 
-header > a:hover {
-  background-image: url('../images/grailzLogoRed.png');
+#header-logo {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
 }
 
-header > a img:hover {
+#header-logo:hover {
   opacity: 0%;
+}
+
+#blue-logo {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  z-index: 1;
+}
+
+#red-logo {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+}
+
+/* header logo shine animation from https://codepen.io/zerdmann/pen/WGJgKj */
+#animation-anchor:after {
+	content: '';
+  top: 0;
+  width: 80px;
+	height: 90px;
+	position: absolute;
+	z-index: 3;
+	animation: slide 8s infinite 0s;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+, Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+@keyframes slide {
+	0% {
+    transform: translateX(-30%);
+  }
+  15% {
+    transform: translateX(260%);
+  }
+	100% {
+    transform: translateX(260%);
+  }
 }
 
 .navbar {
   display: inline-flex;
   width: 80%;
   border: 1px solid blue;
-  margin-left: 20px;
+  margin: 0 0 10px 260px;
 }
 
 .nav-item-wrapper {
