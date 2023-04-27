@@ -20,6 +20,11 @@ body {
   background-size: cover;
 }
 
+#login-body {
+  background-color: black;
+  background-image: none;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -210,6 +215,18 @@ footer {
   width: 30%;
   margin: 80px auto;
   border: 1px solid black;
+}
+
+#login-form {
+  margin-top: 150px;
+}
+
+#login-form input[type=checkbox] {
+  border: 1px solid black;
+}
+
+#login-form a:hover {
+  color: rgba(0, 0, 135, 0.652);
 }
 
 button {
@@ -467,7 +484,7 @@ fieldset label {
   border: 2px solid black;
   margin-top: 20px;
   overflow: scroll;
-  height: 450px;
+  height: 470px;
 }
 
 #products .container::-webkit-scrollbar {
