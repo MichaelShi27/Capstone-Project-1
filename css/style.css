@@ -21,8 +21,8 @@ body {
 }
 
 #login-body {
-  background-color: black;
-  background-image: none;
+  background-image: url('../images/static.gif');
+  background-size: contain;
 }
 
 @keyframes scroll {
@@ -435,6 +435,11 @@ fieldset label {
 #checkout-form .custom-radio {
   display: inline-block;
   margin: 0 5px;
+}
+
+#products-body {
+  background-color: black;
+  background-image: none;
 }
 
 .sort-by {
